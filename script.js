@@ -53,7 +53,14 @@ navSearchBtn.addEventListener("click", () => {
         for (let category in data) {
             if (category.toLowerCase().includes(searchQuery)) {
                 if (Array.isArray(data[category])) {
-                    results = results.concat(data[category]);
+                    if (category === "countries") {
+                        for (let country of data.countries) {
+                            results = results.concat(country.cities)
+                        }
+                    } else {
+                        results = results.concat(data[category]);
+                    }
+                    console.log(results);
                 } else {
                     results.push(data[category]);
                 }
@@ -87,6 +94,7 @@ navSearchBtn.addEventListener("click", () => {
 
         if (found) {
             contentContainer.style.display = "none";
+            console.log(results);
             showResult(results);
         } else {
             contentContainer.style.display = "none";
