@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="nav-bar">
+        <div class="brand">
+            <em>TravelBloom</em>    
+        </div>
+        
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#contact" class="nav-link">Contact Us</a>
+        </div>
+
+        <div class="search-box">
+            <input 
+                class="search-query"
+                type="text" 
+                name="SearchQuery" 
+                id="query" 
+                placeholder="Enter a destination or keyword"
+            >
+            <i class="fa fa-search searchicon" aria-hidden="true"></i>
+            <button class="search-btn" id="nav-search-btn">Search</button>
+            <button class="cancel-btn" id="nav-cancel-btn">Cancel</button>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <div class="main-section">
+        <div class="social-links-gp">
+            <a href="https://twitter.com/?lang=en" target="_blank">
+                <i class="fa fa-twitter fa-2x linkslogo" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook fa-2x linkslogo" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram fa-2x linkslogo" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fa fa-youtube-play fa-2x linkslogo" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="main-content">
+
+            <div class="result-container" id="result">
+            </div>
+            
+            <div class="content-container" id="content">
+                <div class="hero-section" id="home">
+                    <p class="hero-title">EXPLORE DREAM<br>DESTINATION</p>
+                    <p class="hero-content">
+                        The Travel Recommendation App helps users explore popular travel destinations
+                        through an interactive and user friendly interface. It allows users to search for
+                        beaches, temples, countries, or specific country names to view related cities along
+                        with images and descriptions. The app dynamically fetches data from a structured
+                        JSON file to display relevant results. It provides a simple and efficient way to 
+                        discover and plan travel destinations.
+                    </p>
+                    <button class="confirm-btn" type="button">Book Now</button>
+                </div>
+
+                <!-- About Us -->
+                <div class="about-us-section" id="about">
+                    <p class="about-title">
+                        ABOUT US
+                    </p>
+                    <p class="about-content">
+                        Welcome to Our Company! We are a team of passionate individuals dedicated 
+                        to providing excellent services/products to our customers. Our mission is
+                        to provide the best experience for people traveling to different destinations
+                        around the world.<br>
+                        Our values include integrity, innovation, customer satisfication, and teamwor.
+                        We believe in putting our customers first and working together to achieve our goals. <br>
+                        Feel free to explore our website to learn more about what we offer!
+                    </p>
+                </div>
+
+                <!-- Team Members -->
+                <div class="team-member-section">
+                    <div>
+                        <p class="member-title">Our<br>Team</p>
+                    </div>
+
+                    <div class="team-slot">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                        <p class="member-name">John Doe</p>
+                        <p>John is responsible for overall company stratege and vision.</p>
+                        <p class="member-position">CEO</p>
+                    </div>
+
+                    <div class="team-slot">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                        <p class="member-name">Celina Thomas</p>
+                        <p>Celina leads the technical and operation team.</p>
+                        <p class="member-position">Team Lead</p>
+                    </div>
+
+                    <div class="team-slot">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                        <p class="member-name">Mike Tyson</p>
+                        <p>Mike manages project delivery and client relationships.</p>
+                        <p class="member-position">Delivery Head</p>
+                    </div>
+                </div>
+
+                <!-- Contact us -->
+                <div class="contact-us-section" id="contact">
+                    <div class="contact-us">
+                        <p class="contact-title">
+                            CONTACT US
+                        </p>
+                        <p style="margin: 1rem;">Get in touch</p>
+                    </div>
+
+                    <div class="contact-form-container" id="contact">
+                        <form class="contact-from">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your mail">
+
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+
+                            <button type="submit" class="submit-btn" onclick="">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

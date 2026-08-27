@@ -1,0 +1,80 @@
+{
+    "countries": [
+        {
+            "id": 1,
+            "name": "Australia",
+            "cities": [
+                {
+                    "name": "Sydney, Australia",
+                    "imageUrl": "https://media.cntraveler.com/photos/66fab912116147692b36a28f/1:1/w_5999,h_5999,c_limit/1093537-134.jpg",
+                    "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
+                },
+                {
+                    "name": "Melbourne, Australia",
+                    "imageUrl": "https://content.r9cdn.net/rimg/dimg/e7/e2/a092e93b-city-13998-1641eaba8a3.jpg",
+                    "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Japan",
+            "cities": [
+                {
+                    "name": "Tokyo, Japan",
+                    "imageUrl": "https://i0.wp.com/www.touristjapan.com/wp-content/uploads/2025/02/map-of-tokyo-japan-travel-scaled.jpg",
+                    "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
+                },
+                {
+                    "name": "Kyoto, Japan",
+                    "imageUrl": "https://danae-explore.com/wp-content/uploads/2024/09/Quioto-62a.jpg",
+                    "description": "Known for its historic temples, gardens, and traditional tea houses."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Brazil",
+            "cities": [
+                {
+                    "name": "Rio de Janeiro, Brazil",
+                    "imageUrl": "https://www.amazoncruise.net/wp-content/uploads/2021/12/cristo-redentor.jpg",
+                    "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
+                },
+                {
+                    "name": "São Paulo, Brazil",
+                    "imageUrl": "https://www.mycwt.com/wp-content/uploads/2019/01/sao-paulo-pinheiros-river.jpg",
+                    "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
+                }
+            ]
+        }
+    ],
+    "temples": [
+        {
+            "id": 1,
+            "name": "Angkor Wat, Cambodia",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/1280px-Angkor_Wat.jpg",
+            "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+        },
+        {
+            "id": 2,
+            "name": "Taj Mahal, India",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg",
+            "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+        }
+    ],
+    "beaches": [
+        {
+            "id": 1,
+            "name": "Bora Bora, French Polynesia",
+            "imageUrl": "https://cdn.pixabay.com/photo/2017/12/16/22/22/bora-bora-3023437_640.jpg",
+            "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+        },
+        {
+            "id": 2,
+            "name": "Copacabana Beach, Brazil",
+            "imageUrl": "https://as1.ftcdn.net/jpg/00/65/29/36/1000_F_65293669_iN7UAdCABUBAFX6Ol7eI5KWUwaeR9KPi.jpg",
+            "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+        }
+    ]
+}

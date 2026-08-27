@@ -1,0 +1,616 @@
+:root {
+    --background-color: rgb(0, 85, 85);
+    --text-color: white;
+    --nav-button-color: rgb(9, 146, 146);
+}
+
+/* ---------- Base ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+/* ---------- Navigation ---------- */
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    padding: 1rem;
+
+    background-color: var(--background-color);
+}
+
+.brand {
+    flex-grow: 1;
+    font-size: xx-large;
+}
+
+.nav-links {
+    display: flex;
+    flex-grow: 4;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.nav-link {
+    margin: 0 1rem;
+
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.search-box {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+    margin: 0 2rem;
+    padding: 0.5rem;
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+.search-query {
+    flex-grow: 3;
+
+    min-width: 0;
+    margin-left: 1rem;
+
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+.search-btn,
+.cancel-btn {
+    flex-grow: 1;
+
+    margin-left: 1%;
+    padding: 0.5rem;
+
+    color: var(--text-color);
+    background-color: var(--nav-button-color);
+    border: 0;
+    border-radius: 10px;
+}
+
+/* ---------- Main Section ---------- */
+
+.main-section {
+    display: flex;
+    align-items: flex-start;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("./city.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.social-links-gp {
+    position: sticky;
+    top: 3.5rem;
+
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 70px;
+    height: calc(100vh - 3.5rem);
+    padding: 1rem;
+}
+
+.linkslogo {
+    margin: 1rem 0;
+    padding: 0.3rem 0;
+
+    color: var(--text-color);
+}
+
+.main-content {
+    position: relative;
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    min-width: 0;
+}
+
+/* ---------- Result ---------- */
+.result-container {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.result-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.result-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.result-container h1, .result-container h2, .result-container p {
+    color: black;
+}
+
+.result-cards-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1rem;
+    justify-content: start;
+    box-sizing: border-box;
+}
+
+.result-card {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    max-width: 350px;
+    max-height: 400px;
+    text-align: center;
+}
+
+.result-card img {
+    height: 70%;
+    width: 100%;
+}
+
+/* ---------- Hero ---------- */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 3rem 0;
+}
+
+.hero-title,
+.about-title,
+.member-title,
+.contact-title {
+    margin: 1rem;
+
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-content {
+    width: 45%;
+    min-width: 360px;
+    margin: 1rem;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.confirm-btn {
+    width: fit-content;
+    margin: 0 1rem;
+    padding: 1rem;
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 0;
+    border-radius: 5px;
+}
+
+/* ---------- About ---------- */
+
+.about-us-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 3rem 0;
+}
+
+.about-content {
+    width: 80%;
+    margin: 1rem;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.member-title {
+    margin-right: 10rem;
+}
+
+/* ---------- Team ---------- */
+
+.team-member-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.team-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 250px;
+    padding: 1rem;
+
+    text-align: center;
+}
+
+.team-slot p {
+    margin: 3px;
+}
+
+.member-icon {
+    color: var(--text-color);
+    font-size: 28px;
+}
+
+.member-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.member-position {
+    padding: 1% 5%;
+
+    background-color: var(--background-color);
+    border-radius: 20px;
+}
+
+/* ---------- Contact ---------- */
+
+.contact-us-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.contact-us {
+    /* display: flex; */
+    flex-grow: 1.5;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-container {
+    flex-grow: 1;
+}
+
+.contact-form {
+    padding: 1rem;
+
+    background-color: transparent;
+    border: 0;
+}
+
+/* ---------- Form ---------- */
+
+form label {
+    display: block;
+
+    width: 70%;
+    margin: 1rem 2rem 0.5rem;
+}
+
+form input,
+form textarea {
+    width: 70%;
+    margin: 0 2rem 1rem;
+    padding: 1rem;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form input {
+    height: 1.5rem;
+}
+
+form textarea {
+    height: 5rem;
+    text-align: left;
+}
+
+form button {
+    width: 70%;
+    height: 2rem;
+    margin: 1rem 2rem;
+
+    color: var(--text-color);
+    background-color: var(--nav-button-color);
+    border: 0;
+    border-radius: 10px;
+}
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 900px) {
+    .nav-bar {
+        gap: 1rem;
+    }
+
+    .brand {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex: 1 1 100%;
+    }
+
+    .search-box {
+        flex: 1 1 100%;
+        margin: 0;
+    }
+
+    .hero-content {
+        width: 70%;
+        min-width: 0;
+    }
+
+    .about-content {
+        width: 90%;
+    }
+
+    .member-title {
+        margin-right: 1rem;
+    }
+
+    .team-member-section {
+        justify-content: center;
+    }
+
+    .contact-us-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-us,
+    .contact-form-container {
+        width: 100%;
+    }
+}
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 600px) {
+    /* ---------- Navigation ---------- */
+
+    .nav-bar {
+        position: sticky;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+
+    .brand {
+        flex: none;
+
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        margin: 0 0.5rem;
+    }
+
+    .search-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* ---------- Main ---------- */
+
+    .main-section {
+        background-attachment: scroll;
+    }
+
+    .social-links-gp {
+        position: static;
+
+        flex-direction: row;
+        justify-content: center;
+
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+
+        gap: 0.5rem;
+    }
+
+    .linkslogo {
+        margin: 0.5rem;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    /* ---------- Titles ---------- */
+
+    .hero-title,
+    .about-title,
+    .member-title,
+    .contact-title {
+        margin: 1rem;
+
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero-section {
+        padding: 2rem 0;
+    }
+
+    .hero-content {
+        width: auto;
+        min-width: 0;
+        margin: 1rem;
+
+        font-size: 16px;
+    }
+
+    .confirm-btn {
+        margin: 0 1rem;
+    }
+
+    /* ---------- About ---------- */
+
+    .about-us-section {
+        padding: 2rem 0;
+    }
+
+    .about-content {
+        width: auto;
+        margin: 1rem;
+
+        font-size: 16px;
+    }
+
+    .member-title {
+        margin-right: 1rem;
+    }
+
+    /* ---------- Team ---------- */
+
+    .team-member-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-slot {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* ---------- Contact ---------- */
+
+    .contact-us-section {
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 2rem 0;
+    }
+
+    .contact-us,
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 0 1rem;
+    }
+
+    /* ---------- Form ---------- */
+
+    form label,
+    form input,
+    form textarea,
+    form button {
+        width: calc(100% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    form input {
+        height: auto;
+    }
+
+    form textarea {
+        height: 7rem;
+    }
+}
+
+/* ==========================================================
+   SMALL PHONES
+   ========================================================== */
+
+@media (max-width: 400px) {
+    .brand {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        margin: 0 0.25rem;
+        font-size: 14px;
+    }
+
+    .hero-title,
+    .about-title,
+    .member-title,
+    .contact-title {
+        font-size: 30px;
+    }
+
+    .search-box {
+        padding: 0.4rem;
+    }
+
+    .search-query {
+        margin-left: 0.5rem;
+    }
+
+    .search-btn,
+    .cancel-btn {
+        padding: 0.4rem;
+    }
+}
